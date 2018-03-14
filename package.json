@@ -1,0 +1,50 @@
+{
+  "name": "react_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node build/lib/register.js",
+    "build": "cross-env NODE_ENV=production node build/lib/register.js",
+    "startup": "cross-env node build/lib/register.js",
+    "rebuild": "rm -rf dist && npm run build",
+    "copy-redirects": "cp _redirects dist/"
+  },
+  "dependencies": {
+    "jsx-control-statements": "^3.2.8",
+    "offline-plugin": "^4.8.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-jsx": "^2.2.6"
+  },
+  "repository": "https://github.com/AircityScript/preact-startup.git",
+  "author": "aircity <aircity@drrr.us>",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "boxen": "^1.3.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "image-webpack-loader": "^4.2.0",
+    "ip": "^1.1.5",
+    "json-loader": "^0.5.7",
+    "postcss-clean": "^1.0.2",
+    "postcss-loader": "^2.0.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.2",
+    "url-loader": "^1.0.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2",
+    "webpack-merge": "^4.1.2"
+  }
+}

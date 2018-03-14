@@ -1,0 +1,29 @@
+
+@font-face {
+	font-family: 'ProximaNova-Bold';
+	src: url('~fonts/ProximaNova-Bold.eot?') format('eot'),
+	     url('~fonts/ProximaNova-Bold.otf')  format('opentype'),
+	     url('~fonts/ProximaNova-Bold.woff') format('woff'),
+	     url('~fonts/ProximaNova-Bold.ttf')  format('truetype'),
+	     url('~fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+}
+
+@font-face {
+	font-family: 'ProximaNova-Light';
+	src: url('~fonts/ProximaNova-Light.eot?') format('eot'),
+	     url('~fonts/ProximaNova-Light.otf')  format('opentype'),
+	     url('~fonts/ProximaNova-Light.woff') format('woff'),
+	     url('~fonts/ProximaNova-Light.ttf')  format('truetype'),
+	     url('~fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+}
+
+@font-face {
+    font-family: "DroidSansFallback";
+    src: url("~fonts/DroidSansFallback.eot"); /* IE9 */
+    src: url("~fonts/DroidSansFallback.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("~fonts/DroidSansFallback.woff") format("woff"), /* chrome、firefox */
+    url("~fonts/DroidSansFallback.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("~fonts/DroidSansFallback.svg#DroidSansFallback") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}

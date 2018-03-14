@@ -1,0 +1,79 @@
+//
+// Util
+// -----------------------------------------------------------------------------
+//
+
+// clearfix via http://h5bp.com/q
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*=== Grid ===*/
+.make-row() {
+    .clearfix();
+}
+
+.make-column(...) {
+    display: block;
+    float: left;
+}
+
+//
+// .hover-link
+//
+// 实现链接默认无下划线，hover后有下划线的样式
+
+.hover-link() {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//
+// .unstyled-link
+//
+// 将链接变成默认的文字样式
+
+.unstyled-link() {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+//
+// force-wrap
+//
+// 阻止长字符串（例如url或无意义连续英文字符）打破布局
+
+.force-wrap() {
+    white-space: pre;           // CSS 2.0
+    white-space: pre-wrap;      // CSS 2.1
+    white-space: pre-line;      // CSS 3.0
+    white-space: -pre-wrap;     // Opera 4-6
+    white-space: -o-pre-wrap;   // Opera 7
+    white-space: -moz-pre-wrap; // Mozilla
+    white-space: -hp-pre-wrap;  // HP Printers
+    word-wrap: break-word;      // IE 5+
+}
+
+.background() {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container() {
+    padding-left: rem(12);
+    padding-right: rem(12);
+}
