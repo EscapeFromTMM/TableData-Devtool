@@ -1,9 +1,9 @@
-import Home from '../pages/home.js'
+import App from '../pages/app.js'
 import { BrowserRouter } from 'react-router-dom';
 
 const Main = () => (
     <BrowserRouter>
-        <Home path="/" />
+        <App path="/" />
     </BrowserRouter>
 );
 

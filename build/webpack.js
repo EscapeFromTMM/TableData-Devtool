@@ -56,7 +56,7 @@ let baseConfig = {
                                 ],
                                 'react'
                             ],
-                            plugins: ["transform-runtime", "syntax-dynamic-import", "styled-jsx/babel", "jsx-control-statements"]
+                            plugins: ["transform-runtime", "transform-decorators-legacy", "syntax-dynamic-import", "styled-jsx/babel"]
                         }
                     }
                 ],
